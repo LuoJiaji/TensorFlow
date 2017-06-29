@@ -25,7 +25,7 @@ feature_cols = [tf.contrib.layers.real_valued_column(k) for k in FEATURES]
 
 regressor = tf.contrib.learn.DNNRegressor(feature_columns=feature_cols,
                                           hidden_units=[10, 10],
-                                          model_dir="/tmp/boston_model")
+                                          model_dir="./logs/boston_model")
 
 def input_fn(data_set):
 
